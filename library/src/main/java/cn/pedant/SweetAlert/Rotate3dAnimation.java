@@ -153,7 +153,7 @@ public class Rotate3dAnimation extends Animation {
         mCamera.getMatrix(matrix);
         mCamera.restore();
 
-        matrix.preTranslate(-mPivotX, -mPivotY);
-        matrix.postTranslate(mPivotX, mPivotY);
+        matrix.preTranslate((int)-mPivotX, (int)-mPivotY);
+        matrix.postTranslate((int)mPivotX, (int)mPivotY);
     }
 }
