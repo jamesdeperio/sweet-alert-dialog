@@ -71,7 +71,7 @@ public class OptAnimationLoader {
             }  else if (name.equals("translate")) {
                 anim = new TranslateAnimation(c, attrs);
             } else if (name.equals("rotate3d")) {
-                anim = new Rotate3DAnimation(c, attrs);
+                anim = new Rotate3dAnimation(c, attrs);
             } else {
                 try {
                     anim = (Animation) Class.forName(name).getConstructor(Context.class, AttributeSet.class).newInstance(c, attrs);
