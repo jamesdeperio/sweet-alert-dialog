@@ -70,7 +70,7 @@ public class OptAnimationLoader {
                 anim = new RotateAnimation(c, attrs);
             }  else if (name.equals("translate")) {
                 anim = new TranslateAnimation(c, attrs);
-            } else if (name.equals("Rotate3dAnimation")) {
+            } else if (name.toLowerCase().contains("rotate")) {
                 anim = new Rotate3dAnimation(c, attrs);
             } else {
                 try {
